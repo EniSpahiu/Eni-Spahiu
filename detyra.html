@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" id="F">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b">
+    <p id="para">Shkolla Digjitale</p>
+    <p id="para1"></p>
+    <button onclick="paragrafi()">kliko</button>
+    <script>
+        var x=document.getElementById("para");
+        function paragrafi()
+        {
+            document.getElementById("para1").innerHTML="Urime"+x.innerHTML;
+
+        }
+    </script>
+    <br>
+    <br>
+    
+    <p id="p1">Shkolla Digjitale</p>
+    <button onclick="ndrysho()">Ndrysho Ngjyren</button>
+    <button onclick="rrit()">Ndrysho Madhesin</button>
+  
+    <script>
+        function ndrysho()
+        {
+            document.getElementById('p1').style.color="red";
+
+        }
+        function rrit()
+        {
+            document.getElementById('p1').style="font-size: 100px;color:red";
+        }
+       </script>
+       <br>
+       <button onclick="ndrro()">ndrro ngjyren</button>
+       <button onclick="kthe()">kthe ngjyren</button>
+       <script>
+        function ndrro()
+        {
+            document.getElementById('b').style.background='blue';
+        }
+        function kthe()
+        {
+            document.getElementById('b').style.background='white';
+        }
+       </script>
+       <br>
+       <br>
+       <p id="p2">Shkolla digjitale</p>
+       <button onclick="ndrysho()">Ndrysho</button>
+       <script>
+        function ndrysho()
+        {
+            document.getElementById('p2').style='font-size:45px;color:brown';
+        }
+
+       </script>
+       <br>
+       <br>
+       <p onclick="text1(this)">Prizren</p>
+<script>
+    function text1(para)
+    {
+        para.innerHTML = "Prishtine"
+    }
+</script>
+<p id="p4" ondblclick="kliko(this)" onclick="kliko2(this)">DBclick</p>
+    <script>
+        function kliko(para)
+        {
+            
+            document.getElementById('p4').style.color='blue';
+        }
+            function kliko2(pas)
+            {
+             document.getElementById('p4').style.color="green";
+            }
+    </script>
+
+
+</body>
+</html>
